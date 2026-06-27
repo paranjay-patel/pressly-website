@@ -1,0 +1,104 @@
+---
+import Logo from '../components/Logo.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Pressly - Professional on-demand doorstep ironing services. Schedule a pickup, count your clothes at the door, and track delivery in real time." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://pressly.app" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="canonical" href="https://pressly.app" />
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet" />
+	</head>
+	<body class="min-h-screen flex flex-col font-sans text-slate-900 bg-white antialiased selection:bg-primary/20 selection:text-primary">
+		<!-- Navigation Header -->
+		<header class="fixed top-0 left-0 w-full h-[80px] bg-white/80 backdrop-blur-md border-b border-slate-200 z-50 flex items-center transition-all duration-300">
+			<div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+				<a href="/" class="flex items-center gap-2 no-underline">
+					<Logo />
+				</a>
+				<nav class="hidden md:flex gap-8">
+					<a href="/#features" class="text-slate-600 font-medium text-sm hover:text-primary transition-colors relative group">
+						Features
+						<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full"></span>
+					</a>
+					<a href="/#how-it-works" class="text-slate-600 font-medium text-sm hover:text-primary transition-colors relative group">
+						How it Works
+						<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full"></span>
+					</a>
+					<a href="/#reviews" class="text-slate-600 font-medium text-sm hover:text-primary transition-colors relative group">
+						Reviews
+						<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full"></span>
+					</a>
+				</nav>
+				<div class="flex items-center gap-4">
+					<a href="/partner" class="hidden md:inline-flex items-center justify-center px-4 py-2 rounded-xl font-semibold text-sm bg-slate-100 text-slate-900 border border-slate-200 hover:bg-slate-200 hover:-translate-y-0.5 transition-all">Partner With Us</a>
+					<a href="#download" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-sm bg-gradient-to-br from-primary to-accent text-white shadow-[0_4px_12px_rgba(99,102,241,0.15)] hover:shadow-[0_8px_20px_rgba(2,132,199,0.25)] hover:-translate-y-0.5 transition-all">Get the App</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="mt-[80px] flex-1">
+			<slot />
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-slate-50 border-t border-slate-200 pt-20 pb-8 mt-auto">
+			<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
+				<div class="lg:col-span-2">
+					<div class="mb-4">
+						<a href="/" class="flex items-center gap-2 no-underline">
+							<Logo />
+						</a>
+					</div>
+					<p class="text-slate-600 text-sm leading-relaxed max-w-xs">Redefining laundry care with transparent doorstep counting and live tracking.</p>
+				</div>
+				<div class="flex flex-col gap-3">
+					<h4 class="font-display font-bold text-slate-900 mb-2">Customers</h4>
+					<a href="/#features" class="text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">App Features</a>
+					<a href="/#how-it-works" class="text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">How it Works</a>
+					<a href="/faq" class="text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">FAQ</a>
+				</div>
+				<div class="flex flex-col gap-3">
+					<h4 class="font-display font-bold text-slate-900 mb-2">Partners</h4>
+					<a href="/partner" class="text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">Join as Vendor</a>
+					<a href="/partner#benefits" class="text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">Benefits</a>
+				</div>
+				<div class="flex flex-col gap-3">
+					<h4 class="font-display font-bold text-slate-900 mb-2">Legal</h4>
+					<a href="/privacy" class="text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">Privacy Policy</a>
+					<a href="/terms" class="text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">Terms of Service</a>
+				</div>
+			</div>
+			<div class="max-w-7xl mx-auto px-6 border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-sm">
+				<p>&copy; {new Date().getFullYear()} Pressly Inc. All rights reserved.</p>
+				<div class="flex gap-4 text-xl">
+					<a href="#" aria-label="Twitter" class="hover:text-primary transition-colors">𝕏</a>
+					<a href="#" aria-label="Instagram" class="hover:text-primary transition-colors">📸</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

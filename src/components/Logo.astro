@@ -1,0 +1,54 @@
+---
+interface Props {
+	class?: string;
+	showText?: boolean;
+}
+
+const { class: className = "w-8 h-8", showText = true } = Astro.props;
+---
+<div class="flex items-center gap-2">
+	<!-- Graphic Mark -->
+	<svg class={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="pressly-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+				<stop offset="0%" stop-color="#0284C7" />
+				<stop offset="100%" stop-color="#6366F1" />
+			</linearGradient>
+		</defs>
+		
+		<!-- Subtle background fill of the P-Iron shape -->
+		<path 
+			d="M8 26V6C8 4.89543 8.89543 4 10 4H18C23.5228 4 28 8.47715 28 14C28 19.5228 23.5228 24 18 24H10C8.89543 24 8 23.1046 8 22" 
+			fill="url(#pressly-grad)" 
+			class="opacity-[0.08]"
+		/>
+		
+		<!-- Main Outer Path (Letter 'P' combined with steam iron body) -->
+		<path 
+			d="M8 28V6C8 4.89543 8.89543 4 10 4H18C23.5228 4 28 8.47715 28 14C28 19.5228 23.5228 24 18 24H10C8.89543 24 8 23.1046 8 22" 
+			stroke="url(#pressly-grad)" 
+			stroke-width="3" 
+			stroke-linecap="round" 
+			stroke-linejoin="round"
+		/>
+		
+		<!-- Inner Path (Iron Handle / loop interior) -->
+		<path 
+			d="M13 10H17C19.2091 10 21 11.7909 21 14C21 16.2091 19.2091 18 17 18H13" 
+			stroke="url(#pressly-grad)" 
+			stroke-width="2.5" 
+			stroke-linecap="round" 
+			stroke-linejoin="round"
+		/>
+		
+		<!-- Sparkles/Steam particles to emphasize freshness -->
+		<path d="M25 5L26.5 6.5M26.5 5L25 6.5" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" />
+		<circle cx="28" cy="9" r="1" fill="#0284C7" />
+	</svg>
+	
+	{showText && (
+		<span class="font-display text-2xl font-black tracking-tight text-slate-900">
+			Press<span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">ly</span>
+		</span>
+	)}
+</div>
