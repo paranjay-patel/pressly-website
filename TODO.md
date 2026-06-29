@@ -9,3 +9,4 @@ This file tracks pending items that need to be completed before the final produc
 - [ ] **Update Hardcoded Links:** Search the codebase for `pressly.app` (e.g., in `Layout.astro` fallback URLs) and update them to the final domain.
 - [ ] **Social Links:** Update the `#` hrefs in the footer social icons (`Layout.astro`) to point to your actual Twitter and Instagram profiles.
 - [ ] **Forms:** Ensure backend logic for the Contact and Vendor onboarding forms is fully connected to your production API or email service.
+ 
