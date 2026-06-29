@@ -1,0 +1,53 @@
+---
+import { HelpCircle } from '@lucide/astro';
+---
+	<!-- FAQ Section -->
+	<section class="py-20 bg-white">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6">
+			<div class="text-center mb-16">
+				<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-primary font-bold text-sm mb-4">FAQ</span>
+				<h2 class="font-display text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Support Questions</h2>
+			</div>
+
+			<div class="space-y-4">
+				<!-- FAQ 1 -->
+				<details name="contact-faq" class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden" open>
+					<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-900 text-lg hover:bg-slate-100/50 transition-colors">
+						<span>What are your customer support hours?</span>
+						<span class="transition group-open:rotate-180 text-primary">
+							<HelpCircle class="w-5 h-5" />
+						</span>
+					</summary>
+					<div class="p-6 pt-0 border-t border-slate-200/50 text-slate-600 text-sm md:text-base leading-relaxed bg-white">
+						Our support team is available 7 days a week, from 9:00 AM to 8:00 PM IST. Any messages received outside these hours will be addressed first thing the next morning.
+					</div>
+				</details>
+
+				<!-- FAQ 2 -->
+				<details name="contact-faq" class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+					<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-900 text-lg hover:bg-slate-100/50 transition-colors">
+						<span>How fast do you respond to messages?</span>
+						<span class="transition group-open:rotate-180 text-primary">
+							<HelpCircle class="w-5 h-5" />
+						</span>
+					</summary>
+					<div class="p-6 pt-0 border-t border-slate-200/50 text-slate-600 text-sm md:text-base leading-relaxed bg-white">
+						We aim to respond to all inquiries submitted through the contact form within 2 hours during normal business hours. If your request is urgent regarding an active order, please use the in-app chat or call feature instead.
+					</div>
+				</details>
+
+				<!-- FAQ 3 -->
+				<details name="contact-faq" class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+					<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-900 text-lg hover:bg-slate-100/50 transition-colors">
+						<span>Where is Pressly currently operating?</span>
+						<span class="transition group-open:rotate-180 text-primary">
+							<HelpCircle class="w-5 h-5" />
+						</span>
+					</summary>
+					<div class="p-6 pt-0 border-t border-slate-200/50 text-slate-600 text-sm md:text-base leading-relaxed bg-white">
+						Pressly is currently operating exclusively in Surat, Gujarat. We are rapidly expanding our partner network and will be launching in other major cities soon.
+					</div>
+				</details>
+			</div>
+		</div>
+	</section>

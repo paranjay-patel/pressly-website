@@ -1,0 +1,202 @@
+---
+import { Mail, Phone, MapPin, Send } from '@lucide/astro';
+---
+
+	<!-- Contact Form Section -->
+	<section class="py-24 bg-slate-50 relative border-t border-b border-slate-200">
+		<!-- Background decorative grid -->
+		<div class="absolute inset-0 bg-[linear-gradient(to_right,#f8fafc_1px,transparent_1px),linear-gradient(to_bottom,#f8fafc_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+			<!-- Massive Container Card -->
+			<div class="bg-white rounded-[2.5rem] md:rounded-[3rem] shadow-2xl shadow-slate-200/50 p-2 sm:p-3 md:p-4">
+				<div class="grid lg:grid-cols-12 gap-0 overflow-hidden rounded-[2rem] md:rounded-[2.5rem]">
+					
+					<!-- Left Column: Dark Elegant Panel -->
+					<div class="lg:col-span-5 bg-slate-900 p-10 md:p-14 relative group flex flex-col justify-between overflow-hidden">
+						<!-- Animated Glows -->
+						<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 group-hover:bg-primary/30 transition-colors duration-700"></div>
+						<div class="absolute bottom-0 left-0 w-64 h-64 bg-sky-500/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 group-hover:bg-sky-500/30 transition-colors duration-700"></div>
+						<div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none"></div>
+
+						<div class="relative z-10">
+							<h2 class="font-display text-4xl md:text-5xl font-extrabold text-white mb-6">Let's talk.</h2>
+							<p class="text-slate-300 leading-relaxed text-lg mb-12 max-w-sm">
+								Whether you have a question about your order, pricing, or partnership opportunities, we're here to help.
+							</p>
+
+							<!-- Sleek Contact Items -->
+							<div class="space-y-8">
+								<a href="mailto:support@pressly.app" class="flex items-center gap-5 group/item">
+									<div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md flex items-center justify-center text-white group-hover/item:bg-primary group-hover/item:border-primary group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300 shadow-lg">
+										<Mail class="w-5 h-5" />
+									</div>
+									<div class="group-hover/item:translate-x-2 transition-transform duration-300">
+										<p class="text-sm text-slate-400 font-medium mb-0.5">Email us</p>
+										<p class="text-white font-bold text-lg">support@pressly.app</p>
+									</div>
+								</a>
+
+								<a href="tel:+919876543210" class="flex items-center gap-5 group/item">
+									<div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md flex items-center justify-center text-white group-hover/item:bg-emerald-500 group-hover/item:border-emerald-500 group-hover/item:scale-110 group-hover/item:-rotate-3 transition-all duration-300 shadow-lg">
+										<Phone class="w-5 h-5" />
+									</div>
+									<div class="group-hover/item:translate-x-2 transition-transform duration-300">
+										<p class="text-sm text-slate-400 font-medium mb-0.5">Call us</p>
+										<p class="text-white font-bold text-lg">+91 98765 43210</p>
+									</div>
+								</a>
+
+								<div class="flex items-center gap-5 group/item cursor-default">
+									<div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md flex items-center justify-center text-white group-hover/item:bg-rose-500 group-hover/item:border-rose-500 group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300 shadow-lg shrink-0">
+										<MapPin class="w-5 h-5" />
+									</div>
+									<div class="group-hover/item:translate-x-2 transition-transform duration-300">
+										<p class="text-sm text-slate-400 font-medium mb-0.5">Visit us</p>
+										<p class="text-white font-bold text-base leading-snug">
+											123 Startup Hub, Ring Road<br />Surat, Gujarat 395002
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Socials -->
+						<div class="relative z-10 mt-16 pt-8 border-t border-white/10 flex gap-4">
+							<a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white hover:text-slate-900 hover:-translate-y-1 transition-all duration-300">
+								<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+							</a>
+							<a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white hover:text-slate-900 hover:-translate-y-1 transition-all duration-300">
+								<svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+							</a>
+							<a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white hover:text-slate-900 hover:-translate-y-1 transition-all duration-300">
+								<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Right Column: Interactive Form -->
+					<div class="lg:col-span-7 bg-white p-10 md:p-14 lg:p-16 flex flex-col justify-center relative">
+						
+						<!-- Success State -->
+						<div id="contact-success" class="hidden absolute inset-0 bg-white z-20 flex-col items-center justify-center text-center p-8">
+							<div class="relative w-24 h-24 mb-8 mx-auto">
+								<div class="absolute inset-0 bg-emerald-100 rounded-full animate-ping opacity-50"></div>
+								<div class="relative w-full h-full bg-emerald-500 rounded-full flex items-center justify-center text-white shadow-xl shadow-emerald-500/30">
+									<svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+								</div>
+							</div>
+							<h4 class="font-display text-3xl font-extrabold text-slate-900 mb-4">Message Sent!</h4>
+							<p class="text-slate-600 text-lg mb-8 max-w-sm mx-auto">Thanks for reaching out to Pressly. We'll get back to you within a few hours.</p>
+							<button type="button" id="contact-reset" class="px-8 py-3 bg-slate-100 border border-slate-200 rounded-2xl font-bold text-slate-700 hover:bg-slate-200 hover:-translate-y-0.5 transition-all">Send another message</button>
+						</div>
+
+						<h3 class="font-display text-3xl font-bold text-slate-900 mb-8">Send a Message</h3>
+						
+						<form id="contact-form" class="space-y-6">
+							<!-- Name -->
+							<div class="relative group">
+								<input type="text" id="name" name="name" required minlength="2" class="peer w-full px-5 py-4 rounded-2xl border-2 border-slate-100 bg-slate-50 text-slate-900 font-medium focus:outline-none focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all placeholder-transparent" placeholder="John Doe" />
+								<label for="name" class="absolute left-5 top-4 text-slate-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-primary peer-focus:bg-white peer-focus:px-2 peer-valid:-top-2.5 peer-valid:text-xs peer-valid:bg-white peer-valid:px-2">Full Name <span class="text-red-500">*</span></label>
+								<p class="hidden text-red-500 text-xs mt-1.5 ml-2 font-medium" id="err-name">Please enter your valid full name.</p>
+							</div>
+
+							<!-- Phone -->
+							<div class="relative group">
+								<div class="flex rounded-2xl border-2 border-slate-100 bg-slate-50 focus-within:border-primary focus-within:bg-white focus-within:ring-4 focus-within:ring-primary/10 transition-all overflow-hidden relative">
+									<span class="px-5 py-4 bg-slate-100 border-r border-slate-200 text-slate-600 font-bold z-10">+91</span>
+									<input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" class="peer flex-1 px-5 py-4 border-none bg-transparent focus:outline-none text-slate-900 font-medium placeholder-transparent" placeholder="9876543210" />
+									<label for="phone" class="absolute left-[88px] top-4 text-slate-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-primary peer-focus:bg-white peer-focus:px-2 peer-focus:-ml-[68px] peer-valid:-top-2.5 peer-valid:text-xs peer-valid:bg-white peer-valid:px-2 peer-valid:-ml-[68px]">Mobile Number <span class="text-red-500">*</span></label>
+								</div>
+								<p class="hidden text-red-500 text-xs mt-1.5 ml-2 font-medium" id="err-phone">Please enter a valid 10-digit mobile number.</p>
+							</div>
+
+							<!-- Message -->
+							<div class="relative group">
+								<textarea id="message" name="message" required minlength="10" rows="4" class="peer w-full px-5 py-4 rounded-2xl border-2 border-slate-100 bg-slate-50 text-slate-900 font-medium focus:outline-none focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10 transition-all placeholder-transparent resize-none" placeholder="How can we help you?"></textarea>
+								<label for="message" class="absolute left-5 top-4 text-slate-400 font-medium transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-xs peer-focus:text-primary peer-focus:bg-white peer-focus:px-2 peer-valid:-top-2.5 peer-valid:text-xs peer-valid:bg-white peer-valid:px-2">Your Message <span class="text-red-500">*</span></label>
+								<p class="hidden text-red-500 text-xs mt-1.5 ml-2 font-medium" id="err-message">Message must be at least 10 characters long.</p>
+							</div>
+
+							<button type="submit" id="contact-submit" class="w-full py-4 rounded-2xl font-bold text-lg bg-slate-900 text-white shadow-xl shadow-slate-900/20 hover:bg-primary hover:shadow-primary/30 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group/btn mt-4 overflow-hidden relative">
+								<span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></span>
+								<span class="relative z-10">Send Message</span>
+								<Send class="w-5 h-5 relative z-10 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		const form = document.getElementById('contact-form') as HTMLFormElement;
+		const successState = document.getElementById('contact-success');
+		const resetBtn = document.getElementById('contact-reset');
+		const submitBtn = document.getElementById('contact-submit') as HTMLButtonElement;
+
+		// Validation elements
+		const errName = document.getElementById('err-name');
+		const errPhone = document.getElementById('err-phone');
+		const errMessage = document.getElementById('err-message');
+
+		form?.addEventListener('submit', (e) => {
+			e.preventDefault();
+			
+			// Reset errors
+			[errName, errPhone, errMessage].forEach(el => el?.classList.add('hidden'));
+			
+			const name = (document.getElementById('name') as HTMLInputElement).value.trim();
+			const phone = (document.getElementById('phone') as HTMLInputElement).value.trim();
+			const message = (document.getElementById('message') as HTMLTextAreaElement).value.trim();
+			
+			let isValid = true;
+
+			if (name.length < 2) {
+				errName?.classList.remove('hidden');
+				isValid = false;
+			}
+			
+			if (!/^[0-9]{10}$/.test(phone)) {
+				errPhone?.classList.remove('hidden');
+				isValid = false;
+			}
+			
+			if (message.length < 10) {
+				errMessage?.classList.remove('hidden');
+				isValid = false;
+			}
+
+			if (!isValid) return;
+
+			// UI state change to simulating sending
+			submitBtn.disabled = true;
+			submitBtn.innerHTML = '<span class="inline-block w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></span> Sending...';
+
+			// Simulate API call
+			setTimeout(() => {
+				form.style.opacity = '0';
+				form.style.visibility = 'hidden';
+				
+				// Track custom event
+				if (typeof window.trackEvent === 'function') {
+					window.trackEvent('contact_submit', { form: 'main_contact' });
+				}
+				
+				successState?.classList.remove('hidden');
+				successState?.classList.add('flex');
+				
+				submitBtn.disabled = false;
+				submitBtn.innerHTML = '<span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:animate-[shimmer_1.5s_infinite]"></span><span class="relative z-10">Send Message</span><svg class="w-5 h-5 relative z-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>';
+				form.reset();
+			}, 1200);
+		});
+
+		resetBtn?.addEventListener('click', () => {
+			successState?.classList.add('hidden');
+			successState?.classList.remove('flex');
+			form.style.opacity = '1';
+			form.style.visibility = 'visible';
+		});
+	</script>

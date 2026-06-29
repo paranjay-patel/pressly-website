@@ -1,0 +1,39 @@
+---
+import { Target, Eye } from '@lucide/astro';
+---
+	<!-- Mission & Vision Bento Grid -->
+	<section class="py-16 bg-slate-50 relative border-t border-b border-slate-200">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6">
+			<div class="grid lg:grid-cols-3 gap-6">
+				<!-- Mission Card (Spans 2 columns) -->
+				<div class="lg:col-span-2 bg-white border border-slate-200 rounded-[2.5rem] p-10 md:p-14 group hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 transition-all duration-500 relative overflow-hidden cursor-default">
+					<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors duration-500"></div>
+					<div class="relative z-10 flex flex-col h-full justify-between">
+						<div>
+							<div class="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-100 text-primary flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm">
+								<Target class="w-8 h-8" />
+							</div>
+							<h3 class="font-display text-3xl font-extrabold text-slate-900 mb-4">Our Mission</h3>
+							<p class="text-slate-600 leading-relaxed text-xl max-w-xl">
+								To digitize and elevate local ironing businesses while providing households with a fully transparent, doorstep-verified laundry experience.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Vision Card -->
+				<div class="bg-slate-900 border border-slate-800 rounded-[2.5rem] p-10 md:p-14 group hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 relative overflow-hidden cursor-default">
+					<div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+					<div class="relative z-10 flex flex-col h-full">
+						<div class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md text-white flex items-center justify-center mb-8 group-hover:rotate-12 transition-all duration-500 border border-white/10">
+							<Eye class="w-8 h-8" />
+						</div>
+						<h3 class="font-display text-2xl font-extrabold text-white mb-4">Our Vision</h3>
+						<p class="text-slate-300 leading-relaxed text-lg">
+							To become the trusted infrastructure for local garment care, empowering micro-entrepreneurs across the country.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

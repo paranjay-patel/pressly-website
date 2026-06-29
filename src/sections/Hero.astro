@@ -1,0 +1,261 @@
+---
+import { MapPin, Shirt, Sparkles } from '@lucide/astro';
+---
+
+<!-- 1. Hero Section -->
+	<section class="relative pt-12 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+		<!-- Subtle premium grid background -->
+		<div class="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-60 pointer-events-none -z-10"></div>
+
+		<!-- Floating Decorative Orbs -->
+		<div class="absolute top-1/4 -left-10 w-64 h-64 bg-sky-200/60 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-[float_6s_ease-in-out_infinite] pointer-events-none -z-10"></div>
+		<div class="absolute top-1/3 right-0 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-[float_6s_ease-in-out_infinite_2s] pointer-events-none -z-10"></div>
+		
+		<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+			<div class="flex flex-col items-center lg:items-start text-center lg:text-left z-10">
+				<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/40 backdrop-blur-md border border-white/60 text-primary font-semibold text-sm mb-6 animate-fade-in-up">
+					<span class="relative flex h-2 w-2">
+					  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+					  <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+					</span>
+					Now serving Surat
+				</div>
+				<h1 class="font-display text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
+					Professional Ironing,<br />
+					<span class="text-primary">Delivered to Your Door.</span>
+				</h1>
+				<p class="text-lg lg:text-xl text-slate-600 mb-8 max-w-lg leading-relaxed">
+					Book top-rated local ironing professionals in seconds. We pick up your clothes, iron them to perfection, and deliver them back to you—all managed through one app.
+				</p>
+				<div class="flex flex-col sm:flex-row items-center gap-6 w-full lg:w-auto">
+					<a href="#download" onclick="if(typeof window.trackEvent === 'function') window.trackEvent('cta_click', { location: 'hero', type: 'download' })" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl font-bold text-lg bg-slate-900 text-white shadow-md hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-300">
+						Download App
+					</a>
+					<div class="flex items-center gap-4">
+						<div class="flex -space-x-3">
+							<img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1" alt="User 1" />
+							<img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=2" alt="User 2" />
+							<img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=3" alt="User 3" />
+						</div>
+						<div class="text-sm text-left">
+							<p class="text-slate-600">Join <span class="font-bold text-slate-900">10,000+</span></p>
+							<p class="text-slate-600">happy customers</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Micro Trust Text -->
+				<div class="flex flex-wrap items-center gap-6 text-sm text-slate-500 font-medium mt-6">
+					<div class="flex items-center gap-2">
+						<svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						</svg>
+						No subscription required
+					</div>
+					<div class="flex items-center gap-2">
+						<svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						</svg>
+						Free pickup available
+					</div>
+				</div>
+			</div>
+					<div class="relative h-[560px] w-full max-w-[340px] mx-auto flex justify-center items-center perspective-1000">
+				<!-- High-Fidelity iPhone Frame -->
+				<div class="relative w-[300px] h-[530px] bg-slate-950 rounded-[48px] p-2.5 shadow-2xl border-4 border-slate-900 transform rotate-y-[-8deg] rotate-x-[4deg] hover:rotate-0 transition-transform duration-700 ease-out z-20">
+					<!-- iPhone Side Buttons (Volume & Power) aligned perfectly to frame outer boundaries -->
+					<!-- Silent Switch -->
+					<div class="absolute -left-[6px] top-16 w-[3px] h-4 bg-slate-800 rounded-l-xs z-10"></div>
+					<!-- Volume Up Button -->
+					<div class="absolute -left-[6px] top-24 w-[3px] h-9 bg-slate-800 rounded-l-xs z-10"></div>
+					<!-- Volume Down Button -->
+					<div class="absolute -left-[6px] top-36 w-[3px] h-9 bg-slate-800 rounded-l-xs z-10"></div>
+					<!-- Power Button -->
+					<div class="absolute -right-[6px] top-28 w-[3px] h-12 bg-slate-800 rounded-r-xs z-10"></div>
+
+					<!-- Inner Screen Container -->
+					<div class="w-full h-full bg-white rounded-[38px] overflow-hidden flex flex-col relative select-none">
+						<!-- iOS Dynamic Island Notch -->
+						<div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-20 h-4 bg-black rounded-full z-50"></div>
+
+						<!-- iOS Status Bar -->
+						<div class="absolute top-0 inset-x-0 h-7 bg-white/90 backdrop-blur-md z-40 flex items-center justify-between px-6">
+							<span class="text-[9px] font-bold text-slate-800">9:41</span>
+							<div class="flex items-center gap-1.5 text-slate-850">
+								<!-- iOS Signal Bars -->
+								<svg class="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M2 22h20V2z" opacity=".2"/><path d="M17 5L2 20v2h15z"/></svg>
+								<!-- Wifi Icon -->
+								<svg class="w-2.5 h-2.5 fill-current" viewBox="0 0 24 24"><path d="M12 21l-12-12c4.97-4.97 13.03-4.97 18 0l-6 12z"/></svg>
+								<!-- Battery Icon -->
+								<div class="w-5 h-2.5 border border-slate-800 rounded-xs p-0.5 flex items-center">
+									<div class="h-full w-3 bg-slate-800 rounded-2xs"></div>
+									<div class="w-0.5 h-1 bg-slate-800 rounded-r-2xs ml-0.5"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- App Main Content Area -->
+						<div class="flex-1 flex flex-col pt-7 overflow-hidden bg-slate-50">
+							<!-- App Header -->
+							<div class="px-4 py-2 bg-white border-b border-slate-100 flex items-center justify-between z-20">
+								<svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+								<span class="font-bold text-slate-900 text-[10px] tracking-tight">Order #LND-7489</span>
+								<span class="text-[9px] text-primary font-bold flex items-center gap-0.5">
+									<svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" /></svg>
+									Help
+								</span>
+							</div>
+
+							<!-- App Body Scrollable -->
+							<div class="flex-1 flex flex-col overflow-y-auto">
+								<!-- Map Area -->
+								<div class="h-40 bg-sky-100 relative overflow-hidden shrink-0 border-b border-slate-100">
+									<!-- Rivers, parks representation via SVG vectors -->
+									<svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 200 150">
+										<!-- River -->
+										<path d="M-10,30 Q30,40 50,70 T100,100 T180,110 L210,110 L210,160 L-10,160 Z" fill="#bae6fd" />
+										<!-- Park -->
+										<rect x="70" y="30" width="60" height="40" rx="8" fill="#dcfce7" />
+										<text x="100" y="52" font-size="6" font-weight="bold" fill="#16a34a" text-anchor="middle">Guiten Park</text>
+										<!-- Roads -->
+										<path d="M 0,60 L 200,60 M 40,0 L 40,150 M 160,0 L 160,150 M 0,110 L 200,110" stroke="#f8fafc" stroke-width="5" fill="none" />
+									</svg>
+									
+									<!-- Pins -->
+									<!-- Laundry Pin -->
+									<div class="absolute top-[32px] left-[50px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+										<div class="bg-primary text-white rounded-md px-1 py-0.5 text-[6px] font-bold shadow-md whitespace-nowrap mb-0.5">Laundry Center</div>
+										<div class="w-3.5 h-3.5 rounded-full bg-primary border border-white flex items-center justify-center shadow-lg">
+											<span class="text-[6px] font-black text-white">L</span>
+										</div>
+									</div>
+
+									<!-- Home Pin -->
+									<div class="absolute top-[85px] left-[130px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+										<div class="bg-slate-900 text-white rounded-md px-1 py-0.5 text-[6px] font-bold shadow-md whitespace-nowrap mb-0.5">Home</div>
+										<div class="w-3.5 h-3.5 rounded-full bg-slate-900 border border-white flex items-center justify-center shadow-lg">
+											<svg class="w-2 h-2 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+										</div>
+									</div>
+
+									<!-- Delivery Van Icons on Road -->
+									<div class="absolute top-[48px] left-[90px] w-5 h-5 rounded-full bg-white shadow-md border border-slate-100 flex items-center justify-center animate-pulse">
+										<svg class="w-3 h-3 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124l-.323-5.147a3.375 3.375 0 00-3.326-3.166H16.5m-3 10.5H5.25M16.5 7.5v6m-6-6A2.25 2.25 0 008.25 9.75V12m4.5-4.5a2.25 2.25 0 012.25 2.25V12m-6 0h6" /></svg>
+									</div>
+								</div>
+
+								<!-- Order Timeline Tracker -->
+								<div class="p-3 bg-white border-b border-slate-100 shrink-0">
+									<!-- Horizontal Tracker -->
+									<div class="flex justify-between items-center relative mb-1.5">
+										<!-- Progress Bar Background -->
+										<div class="absolute left-3 right-3 h-0.5 bg-slate-200 top-1/2 -translate-y-1/2"></div>
+										<!-- Progress Bar Active Part -->
+										<div class="absolute left-3 w-[55%] h-0.5 bg-primary top-1/2 -translate-y-1/2"></div>
+										
+										<!-- Steps -->
+										<div class="flex flex-col items-center z-10 relative">
+											<div class="w-5 h-5 rounded-full bg-primary border border-white flex items-center justify-center text-white shadow-md">
+												<svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+											</div>
+											<span class="text-[7px] font-bold text-slate-800 mt-1">Placed</span>
+										</div>
+										<div class="flex flex-col items-center z-10 relative">
+											<div class="w-5 h-5 rounded-full bg-primary border border-white flex items-center justify-center text-white shadow-md">
+												<svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124l-.323-5.147a3.375 3.375 0 00-3.326-3.166H16.5m-3 10.5H5.25M16.5 7.5v6m-6-6A2.25 2.25 0 008.25 9.75V12m4.5-4.5a2.25 2.25 0 012.25 2.25V12m-6 0h6" /></svg>
+											</div>
+											<span class="text-[7px] font-bold text-slate-800 mt-1">Picked Up</span>
+										</div>
+										<div class="flex flex-col items-center z-10 relative">
+											<div class="w-5.5 h-5.5 rounded-full bg-primary border border-white flex items-center justify-center text-white shadow-md animate-pulse">
+												<svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" /></svg>
+											</div>
+											<span class="text-[7px] font-extrabold text-primary mt-1">Ironing</span>
+										</div>
+										<div class="flex flex-col items-center z-10 relative">
+											<div class="w-5 h-5 rounded-full bg-slate-200 border border-white flex items-center justify-center text-slate-400 shadow-sm">
+												<svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg>
+											</div>
+											<span class="text-[7px] font-bold text-slate-400 mt-1">Delivery</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Delivery ETA Banner -->
+								<div class="px-4 py-2 bg-emerald-50 border-b border-emerald-100 flex items-center justify-between shrink-0">
+									<div class="flex items-center gap-1">
+										<svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+										<span class="text-[9px] font-bold text-emerald-800">Est. Delivery: 11:30 AM</span>
+									</div>
+									<span class="text-[7px] font-extrabold text-emerald-700 bg-emerald-100 px-1 py-0.5 rounded uppercase tracking-wider">On Track</span>
+								</div>
+
+								<!-- Driver Details Card -->
+								<div class="p-3 bg-white border-b border-slate-100 flex items-center justify-between shrink-0">
+									<div class="flex items-center gap-2">
+										<div class="relative">
+											<!-- Avatar fallback -->
+											<div class="w-7.5 h-7.5 rounded-full bg-slate-200 flex items-center justify-center overflow-hidden border border-slate-100">
+												<svg class="w-5.5 h-5.5 text-slate-400 mt-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+											</div>
+											<div class="absolute bottom-0 right-0 w-2 h-2 bg-emerald-500 rounded-full border border-white"></div>
+										</div>
+										<div>
+											<h5 class="text-[9px] font-bold text-slate-900 leading-tight">John D.</h5>
+											<div class="flex items-center gap-0.5 text-amber-500 text-[7px] font-bold">
+												<span>4.8</span>
+												<svg class="w-2.0 h-2.0 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+											</div>
+										</div>
+									</div>
+									<div class="flex gap-1">
+										<button class="bg-primary text-white rounded-lg px-2 py-0.5 text-[8px] font-bold shadow-sm flex items-center gap-0.5 hover:bg-primary-dark">
+											<svg class="w-2 h-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.82 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.58c0-.56-.45-1.04-1-1.04z"/></svg>
+											Call
+										</button>
+										<button class="bg-slate-100 text-slate-700 rounded-lg px-2 py-0.5 text-[8px] font-bold border border-slate-200 flex items-center gap-0.5 hover:bg-slate-200">
+											<svg class="w-2 h-2" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 18.97a5.969 5.969 0 01-.774-1.902A12.13 12.13 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" /></svg>
+											Chat
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- App Navigation Bar -->
+							<div class="h-10 bg-white border-t border-slate-100 flex items-center justify-around px-2 shrink-0">
+								<div class="flex flex-col items-center text-primary">
+									<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-.621-.504-1.125-1.125-1.125H9.75M3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25c0 4.556-4.03 8.25-9 8.25s-9-3.694-9-8.25z" /></svg>
+									<span class="text-[7px] font-bold mt-0.5">Order</span>
+								</div>
+								<div class="flex flex-col items-center text-slate-400">
+									<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+									<span class="text-[7px] font-medium mt-0.5">History</span>
+								</div>
+								<div class="flex flex-col items-center text-slate-400">
+									<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" /></svg>
+									<span class="text-[7px] font-medium mt-0.5">Support</span>
+								</div>
+								<div class="flex flex-col items-center text-slate-400">
+									<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+									<span class="text-[7px] font-medium mt-0.5">Profile</span>
+								</div>
+							</div>
+							
+							<!-- iOS Home Indicator -->
+							<div class="h-4 bg-white flex items-center justify-center shrink-0">
+								<div class="w-24 h-1 bg-slate-900/30 rounded-full"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Floating Badges with Glassmorphism -->
+				<div class="absolute top-10 -left-6 bg-white/70 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg font-bold text-xs border border-white/40 flex items-center gap-2 animate-float z-30">
+					<Shirt class="w-4 h-4 text-slate-500" /> 7 Items • ₹140
+				</div>
+				<div class="absolute bottom-20 -right-6 bg-white/70 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg font-bold text-xs border border-white/40 text-emerald-700 flex items-center gap-2 animate-[float_4s_ease-in-out_infinite_2s] z-30">
+					<Sparkles class="w-4 h-4 text-emerald-600" /> Delivered Fresh
+				</div>
+			</div>
+		</div>
+	</section>

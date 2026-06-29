@@ -1,0 +1,66 @@
+---
+import { HelpCircle } from '@lucide/astro';
+---
+	<!-- FAQ Section -->
+	<section class="py-20 bg-white">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6">
+			<div class="text-center mb-16">
+				<span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-primary font-bold text-sm mb-4">FAQ</span>
+				<h2 class="font-display text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Frequently Asked Questions</h2>
+			</div>
+
+			<div class="space-y-4">
+				<!-- FAQ 1 -->
+				<details name="vendor-faq" class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden" open>
+					<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-900 text-lg hover:bg-slate-100/50 transition-colors">
+						<span>How do I receive payments?</span>
+						<span class="transition group-open:rotate-180 text-primary">
+							<HelpCircle class="w-5 h-5" />
+						</span>
+					</summary>
+					<div class="p-6 pt-0 border-t border-slate-200/50 text-slate-600 text-sm md:text-base leading-relaxed bg-white">
+						All digital customer payments are collected securely on the Pressly platform. Payouts are compiled and sent directly to your registered bank account every Wednesday.
+					</div>
+				</details>
+
+				<!-- FAQ 2 -->
+				<details name="vendor-faq" class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+					<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-900 text-lg hover:bg-slate-100/50 transition-colors">
+						<span>Are there any signup or registration fees?</span>
+						<span class="transition group-open:rotate-180 text-primary">
+							<HelpCircle class="w-5 h-5" />
+						</span>
+					</summary>
+					<div class="p-6 pt-0 border-t border-slate-200/50 text-slate-600 text-sm md:text-base leading-relaxed bg-white">
+						No, registering your shop on Pressly is absolutely free. We only charge a small performance-based commission per successful order generated through our application.
+					</div>
+				</details>
+
+				<!-- FAQ 3 -->
+				<details name="vendor-faq" class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+					<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-900 text-lg hover:bg-slate-100/50 transition-colors">
+						<span>How does the delivery process work?</span>
+						<span class="transition group-open:rotate-180 text-primary">
+							<HelpCircle class="w-5 h-5" />
+						</span>
+					</summary>
+					<div class="p-6 pt-0 border-t border-slate-200/50 text-slate-600 text-sm md:text-base leading-relaxed bg-white">
+						When a customer requests an order, you will be notified on your partner app. You are responsible for picking up the clothes, counting them at the doorstep, returning to your shop to perform the service, and delivering them back within the selected schedule.
+					</div>
+				</details>
+
+				<!-- FAQ 4 -->
+				<details name="vendor-faq" class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+					<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-slate-900 text-lg hover:bg-slate-100/50 transition-colors">
+						<span>What happens if a customer disputes the cloth count?</span>
+						<span class="transition group-open:rotate-180 text-primary">
+							<HelpCircle class="w-5 h-5" />
+						</span>
+					</summary>
+					<div class="p-6 pt-0 border-t border-slate-200/50 text-slate-600 text-sm md:text-base leading-relaxed bg-white">
+						Pressly resolves disputes by requiring you to count clothes physically at the customer's doorstep and inputting the exact count directly inside the app, which the customer confirms digitally at that moment. This eliminates post-delivery disputes.
+					</div>
+				</details>
+			</div>
+		</div>
+	</section>

@@ -1,0 +1,83 @@
+---
+import { MapPin, Star, Shirt, Zap, ArrowRight } from '@lucide/astro';
+---
+
+<!-- 4. Nearby Iron Services -->
+	<section id="nearby-services" class="py-24 bg-slate-50 border-t border-slate-200">
+		<div class="max-w-7xl mx-auto px-6">
+			<div class="text-center max-w-2xl mx-auto mb-16">
+				<span class="inline-block px-4 py-1.5 rounded-full bg-white text-primary font-semibold text-sm mb-4 border border-slate-200 shadow-sm">Local Vendors</span>
+				<h2 class="font-display text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Nearby Iron Services</h2>
+				<p class="text-lg text-slate-600">Discover top-rated ironing professionals in your neighborhood, ready to pick up your clothes today.</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8">
+				<!-- Vendor 1 -->
+				<div class="bg-white rounded-[2rem] p-6 border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-1 transition-transform duration-300">
+					<div class="h-40 bg-slate-100 rounded-xl mb-6 overflow-hidden relative">
+						<img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&q=80&w=800" alt="Vendor Shop" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="flex justify-between items-start mb-4">
+						<div>
+							<h3 class="font-bold text-xl text-slate-900">Shree Ram Ironing</h3>
+							<p class="text-slate-500 text-sm flex items-center gap-1 mt-1"><MapPin class="w-3.5 h-3.5" /> 0.5 km away • Vesu</p>
+						</div>
+						<div class="bg-emerald-50 text-emerald-700 font-bold px-2 py-1 rounded-lg text-sm flex items-center gap-1">
+							<Star class="w-3.5 h-3.5 fill-emerald-500 text-emerald-500" /> 4.8
+						</div>
+					</div>
+					<div class="flex items-center gap-4 text-sm text-slate-600 mb-6">
+						<div class="flex items-center gap-1"><Shirt class="w-4 h-4 text-slate-400" /> ₹5/piece</div>
+						<div class="flex items-center gap-1"><Zap class="w-4 h-4 text-amber-400" /> 24h return</div>
+					</div>
+					<button class="w-full py-3 rounded-xl font-bold bg-slate-50 text-primary border border-slate-200 hover:bg-primary hover:text-white transition-colors">Book Pickup</button>
+				</div>
+				<!-- Vendor 2 -->
+				<div class="bg-white rounded-[2rem] p-6 border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-1 transition-transform duration-300">
+					<div class="h-40 bg-slate-100 rounded-xl mb-6 overflow-hidden relative">
+						<img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=800" alt="Vendor Shop" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="flex justify-between items-start mb-4">
+						<div>
+							<h3 class="font-bold text-xl text-slate-900">Mahadev Laundry</h3>
+							<p class="text-slate-500 text-sm flex items-center gap-1 mt-1"><MapPin class="w-3.5 h-3.5" /> 1.2 km away • Adajan</p>
+						</div>
+						<div class="bg-emerald-50 text-emerald-700 font-bold px-2 py-1 rounded-lg text-sm flex items-center gap-1">
+							<Star class="w-3.5 h-3.5 fill-emerald-500 text-emerald-500" /> 4.9
+						</div>
+					</div>
+					<div class="flex items-center gap-4 text-sm text-slate-600 mb-6">
+						<div class="flex items-center gap-1"><Shirt class="w-4 h-4 text-slate-400" /> ₹6/piece</div>
+						<div class="flex items-center gap-1"><Zap class="w-4 h-4 text-amber-400" /> 12h return</div>
+					</div>
+					<button class="w-full py-3 rounded-xl font-bold bg-slate-50 text-primary border border-slate-200 hover:bg-primary hover:text-white transition-colors">Book Pickup</button>
+				</div>
+				<!-- Vendor 3 -->
+				<div class="bg-white rounded-[2rem] p-6 border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-1 transition-transform duration-300">
+					<div class="h-40 bg-slate-100 rounded-xl mb-6 overflow-hidden relative">
+						<img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=800" alt="Vendor Shop" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="flex justify-between items-start mb-4">
+						<div>
+							<h3 class="font-bold text-xl text-slate-900">Krishna Dry Cleaners</h3>
+							<p class="text-slate-500 text-sm flex items-center gap-1 mt-1"><MapPin class="w-3.5 h-3.5" /> 2.0 km away • Piplod</p>
+						</div>
+						<div class="bg-emerald-50 text-emerald-700 font-bold px-2 py-1 rounded-lg text-sm flex items-center gap-1">
+							<Star class="w-3.5 h-3.5 fill-emerald-500 text-emerald-500" /> 4.6
+						</div>
+					</div>
+					<div class="flex items-center gap-4 text-sm text-slate-600 mb-6">
+						<div class="flex items-center gap-1"><Shirt class="w-4 h-4 text-slate-400" /> ₹5/piece</div>
+						<div class="flex items-center gap-1"><Zap class="w-4 h-4 text-amber-400" /> 24h return</div>
+					</div>
+					<button class="w-full py-3 rounded-xl font-bold bg-slate-50 text-primary border border-slate-200 hover:bg-primary hover:text-white transition-colors">Book Pickup</button>
+				</div>
+			</div>
+			
+			<div class="mt-12 text-center">
+				<a href="#" class="inline-flex items-center gap-2 font-bold text-primary hover:text-accent transition-colors">
+					View all vendors in Surat <ArrowRight class="w-4 h-4" />
+				</a>
+			</div>
+		</div>
+	</section>

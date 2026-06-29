@@ -1,0 +1,29 @@
+---
+import AppleIcon from '../components/icons/AppleIcon.astro';
+import GooglePlayIcon from '../components/icons/GooglePlayIcon.astro';
+---
+
+<!-- 6. Customer CTA -->
+	<section id="download" class="py-20 px-6">
+		<div class="max-w-6xl mx-auto bg-white border border-slate-200 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]">
+			<!-- Decorative Blurs -->
+			<div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+				<div class="absolute -top-[50%] -right-[20%] w-[80%] h-[150%] rounded-full bg-primary/5 blur-[120px] transform rotate-12"></div>
+				<div class="absolute -bottom-[50%] -left-[20%] w-[80%] h-[150%] rounded-full bg-primary/10 blur-[120px] transform -rotate-12"></div>
+			</div>
+			
+			<div class="relative z-10 max-w-3xl mx-auto">
+				<h2 class="font-display text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">Your laundry basket is waiting.</h2>
+				<p class="text-xl text-slate-600 mb-12 leading-relaxed">Join thousands of users who have upgraded their daily routine. Get the Pressly app today and experience the magic of effortless ironing.</p>
+				
+				<div class="flex flex-col sm:flex-row justify-center gap-4">
+					<button onclick="if(typeof window.trackEvent === 'function') window.trackEvent('cta_click', { location: 'footer_cta', type: 'app_store' })" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl font-semibold text-lg bg-slate-900 text-white hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-300 shadow-md hover:shadow-xl">
+						<AppleIcon class="w-6 h-6" /> App Store
+					</button>
+					<button onclick="if(typeof window.trackEvent === 'function') window.trackEvent('cta_click', { location: 'footer_cta', type: 'google_play' })" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl font-semibold text-lg bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md">
+						<GooglePlayIcon class="w-6 h-6" /> Google Play
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
