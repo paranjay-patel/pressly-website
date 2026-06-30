@@ -27,11 +27,18 @@ export default {
 				},
 				shimmer: {
 					'100%': { transform: 'translateX(100%)' }
+				},
+				blob: {
+					'0%': { transform: 'translate(0px, 0px) scale(1)' },
+					'33%': { transform: 'translate(300px, -200px) scale(1.2)' },
+					'66%': { transform: 'translate(-250px, 300px) scale(0.8)' },
+					'100%': { transform: 'translate(0px, 0px) scale(1)' },
 				}
 			},
 			animation: {
 				float: 'float 4s ease-in-out infinite',
 				'fade-in-up': 'fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+				blob: 'blob 8s infinite ease-in-out',
 			}
 		},
 	},
