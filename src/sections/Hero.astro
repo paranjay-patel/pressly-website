@@ -8,8 +8,8 @@ import { MapPin, Shirt, Sparkles } from '@lucide/astro';
 		<div class="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_70%_at_50%_0%,black_5%,transparent_100%)] pointer-events-none -z-10"></div>
 
 		<!-- Floating Decorative Orbs -->
-		<div class="absolute top-1/4 -left-10 w-64 h-64 bg-sky-200/60 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-[float_6s_ease-in-out_infinite] pointer-events-none -z-10"></div>
-		<div class="absolute top-1/3 right-0 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-[float_6s_ease-in-out_infinite_2s] pointer-events-none -z-10"></div>
+		<div class="absolute top-1/3 left-10 w-32 h-32 bg-primary/20 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob pointer-events-none -z-10"></div>
+		<div class="absolute top-1/4 right-10 w-32 h-32 bg-sky-300/30 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob [animation-delay:2s] pointer-events-none -z-10"></div>
 		
 		<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 			<div class="flex flex-col items-center lg:items-start text-center lg:text-left z-10">
@@ -256,12 +256,47 @@ import { MapPin, Shirt, Sparkles } from '@lucide/astro';
 				</div>
 
 				<!-- Floating Badges with Glassmorphism -->
-				<div class="absolute top-10 -left-6 bg-white/70 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg font-bold text-xs border border-white/40 flex items-center gap-2 animate-float z-30">
-					<Shirt class="w-4 h-4 text-slate-500" /> 7 Items • ₹140
+				<div class="absolute top-10 -left-6 z-30 animate-float magnetic-wrapper cursor-pointer p-8 -m-8">
+					<div class="magnetic-element bg-white/70 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg font-bold text-xs border border-white/40 flex items-center gap-2 transition-transform duration-200 ease-out will-change-transform">
+						<Shirt class="w-4 h-4 text-slate-500" /> 7 Items • ₹140
+					</div>
 				</div>
-				<div class="absolute bottom-20 -right-6 bg-white/70 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg font-bold text-xs border border-white/40 text-emerald-700 flex items-center gap-2 animate-[float_4s_ease-in-out_infinite_2s] z-30">
-					<Sparkles class="w-4 h-4 text-emerald-600" /> Delivered Fresh
+				<div class="absolute bottom-20 -right-6 z-30 animate-[float_4s_ease-in-out_infinite_2s] magnetic-wrapper cursor-pointer p-8 -m-8">
+					<div class="magnetic-element bg-white/70 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg font-bold text-xs border border-white/40 text-emerald-700 flex items-center gap-2 transition-transform duration-200 ease-out will-change-transform">
+						<Sparkles class="w-4 h-4 text-emerald-600" /> Delivered Fresh
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const wrappers = document.querySelectorAll('.magnetic-wrapper');
+		
+		wrappers.forEach(wrapper => {
+			const element = wrapper.querySelector('.magnetic-element');
+			
+			wrapper.addEventListener('mousemove', (e) => {
+				const rect = wrapper.getBoundingClientRect();
+				const halfWidth = rect.width / 2;
+				const halfHeight = rect.height / 2;
+				
+				// Calculate distance from center of element to mouse cursor
+				const x = e.clientX - rect.left - halfWidth;
+				const y = e.clientY - rect.top - halfHeight;
+				
+				// Apply magnetic pull (increased to 0.55 for a much stronger pull)
+				const pullX = x * 0.55;
+				const pullY = y * 0.55;
+				
+				element.style.transform = `translate(${pullX}px, ${pullY}px) scale(1.1)`;
+			});
+			
+			wrapper.addEventListener('mouseleave', () => {
+				// Reset position when mouse leaves
+				element.style.transform = `translate(0px, 0px) scale(1)`;
+			});
+		});
+	});
+</script>
