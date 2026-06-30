@@ -117,15 +117,19 @@ const defaultSchema = JSON.stringify({
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet" />
 	</head>
 	<body class="min-h-screen flex flex-col font-sans text-slate-900 bg-white antialiased selection:bg-primary/20 selection:text-primary">
-		<!-- Navigation Header with Glassmorphism -->
-		<header class="fixed top-0 left-0 w-full h-[80px] bg-white/40 backdrop-blur-md border-b border-white/30 z-50 flex items-center transition-all duration-300">
+		<!-- Navigation Header (Glassmorphism) -->
+		<header class="fixed top-0 left-0 w-full h-[80px] bg-white/80 backdrop-blur-md border-b border-slate-200 z-50 flex items-center transition-all duration-300 shadow-sm">
 			<div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
 				<a href="/" class="flex items-center gap-2 no-underline">
 					<Logo />
 				</a>
-				<nav class="hidden md:flex gap-8">
+				<nav class="hidden lg:flex gap-8">
 					<a href="/#how-it-works" class="text-slate-600 font-medium text-sm hover:text-primary transition-colors relative group">
 						How it Works
+						<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full"></span>
+					</a>
+					<a href="/about" class="text-slate-600 font-medium text-sm hover:text-primary transition-colors relative group">
+						About
 						<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full"></span>
 					</a>
 					<a href="/faq" class="text-slate-600 font-medium text-sm hover:text-primary transition-colors relative group">
@@ -161,7 +165,7 @@ const defaultSchema = JSON.stringify({
 				</div>
 				<div class="flex flex-col gap-1">
 					<h4 class="font-display font-bold text-slate-900 mb-2">Customers</h4>
-					<a href="/#features" class="block py-2 text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">App Features</a>
+					<a href="/#benefits" class="block py-2 text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">App Features</a>
 					<a href="/#how-it-works" class="block py-2 text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">How it Works</a>
 					<a href="/faq" class="block py-2 text-slate-600 text-sm hover:text-primary hover:translate-x-1 transition-all">FAQ</a>
 				</div>

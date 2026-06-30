@@ -5,7 +5,7 @@ import { MapPin, Shirt, Sparkles } from '@lucide/astro';
 <!-- 1. Hero Section -->
 	<section class="relative pt-12 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
 		<!-- Subtle premium grid background -->
-		<div class="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-60 pointer-events-none -z-10"></div>
+		<div class="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_70%_at_50%_0%,black_5%,transparent_100%)] pointer-events-none -z-10"></div>
 
 		<!-- Floating Decorative Orbs -->
 		<div class="absolute top-1/4 -left-10 w-64 h-64 bg-sky-200/60 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-[float_6s_ease-in-out_infinite] pointer-events-none -z-10"></div>
@@ -13,7 +13,7 @@ import { MapPin, Shirt, Sparkles } from '@lucide/astro';
 		
 		<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 			<div class="flex flex-col items-center lg:items-start text-center lg:text-left z-10">
-				<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/40 backdrop-blur-md border border-white/60 text-primary font-semibold text-sm mb-6 animate-fade-in-up">
+				<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-semibold text-sm mb-6 animate-fade-in-up">
 					<span class="relative flex h-2 w-2">
 					  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 					  <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -28,9 +28,15 @@ import { MapPin, Shirt, Sparkles } from '@lucide/astro';
 					Book top-rated local ironing professionals in seconds. We pick up your clothes, iron them to perfection, and deliver them back to you—all managed through one app.
 				</p>
 				<div class="flex flex-col sm:flex-row items-center gap-6 w-full lg:w-auto">
-					<a href="#download" onclick="if(typeof window.trackEvent === 'function') window.trackEvent('cta_click', { location: 'hero', type: 'download' })" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl font-bold text-lg bg-slate-900 text-white shadow-md hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-300">
-						Download App
-					</a>
+					<div class="relative w-full sm:w-auto p-[3px] rounded-2xl overflow-hidden group shadow-lg hover:-translate-y-0.5 transition-transform duration-300">
+						<!-- Spinning border line -->
+						<div class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#0f172a_0%,#0ea5e9_30%,#a855f7_40%,#ec4899_50%,#0f172a_60%,#0f172a_100%)]"></div>
+						
+						<!-- Actual button -->
+						<a href="#download" onclick="if(typeof window.trackEvent === 'function') window.trackEvent('cta_click', { location: 'hero', type: 'download' })" class="relative w-full h-full inline-flex items-center justify-center px-8 py-4 rounded-[13px] font-bold text-lg bg-slate-900 text-white hover:bg-slate-800 transition-colors duration-300">
+							Download App
+						</a>
+					</div>
 					<div class="flex items-center gap-4">
 						<div class="flex -space-x-3">
 							<img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1" alt="User 1" />
